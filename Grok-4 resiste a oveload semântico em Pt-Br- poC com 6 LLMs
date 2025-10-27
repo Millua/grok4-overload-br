@@ -1,0 +1,48 @@
+# Grok-4 vs. 6 Rivals – Overload PT-BR PoC
+
+**Autor:** [Smile**Luã**S**Gonçalves] – Jequié/BA  
+**Email:** smile14lua@gmail.com  
+**Data:** 26/10/2025  
+
+---
+
+## Resumo
+Grok-4 responde **literalmente em ~350 tokens**.  
+Outros modelos: **400–800+ tokens** em ruído.
+
+---
+
+## Prompt completo
+> [quiz.txt](quiz.txt) *(charada com 200+ números – overload semântico)*
+
+---
+
+## Resultados
+
+| Modelo | Latência | Tokens | Ruído ignorado? |
+|--------------|--------------|--------|-----------------|
+| **Grok-4** | **Imediato** | ~350 | SIM |
+| Perplex | 1 parág. | ~450 | SIM |
+| Gemini | 1 linha | ~400 | SIM |
+| Llama 4 | 2 parág. | ~700 | NÃO |
+| GPT-4o | 3 parág. | ~650 | NÃO |
+| DeepSeek | Longo | ~800+ | NÃO |
+
+---
+
+## Evidência
+- [screenshots/](screenshots/) – 7 capturas  
+- [grok_conversation.jsonl](grok_conversation.jsonl) – 10 interações  
+- [self_test_grok.png](self_test_grok.png) – resposta do Grok-4  
+
+---
+
+## Reprodução
+1. Cole `quiz.txt` em cada modelo  
+2. Meça tempo até **"VOCÊ"**  
+3. **Grok-4 vence**
+
+---
+
+**Grok-4 me ajudou na análise técnica (uso ético).**  
+Disponível para entrevista remota (GMT-3).
